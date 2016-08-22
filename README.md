@@ -2,4 +2,4 @@
 
 A basic setup for beginning GSAP animation projects.
 
-Visit the [https://jointquantum.institute/wiki/doku.php?id=threejs](JQI wiki page) for further information.
+Visit the [JQI wiki page](https://jointquantum.institute/wiki/doku.php?id=threejs) for further information.
