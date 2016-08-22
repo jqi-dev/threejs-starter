@@ -85,6 +85,7 @@ function onWindowResize() {
 
 //
 // THIS IS THE RENDER LOOP
+// Place code that cause animated behavior inside the loop
 //
 
 function animate() {
