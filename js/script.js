@@ -83,6 +83,10 @@ function onWindowResize() {
 
 }
 
+//
+// THIS IS THE RENDER LOOP
+//
+
 function animate() {
   
   // update the camera and render the scene.
