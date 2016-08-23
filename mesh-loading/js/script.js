@@ -53,7 +53,7 @@ function init() {
   // Here the loadMesh() function is called - see below
   //-----------------------------------
   
-  loadMesh();
+  loadMesh(jsonObject);
 
   // Add lights
 
@@ -68,10 +68,9 @@ function init() {
 
 // Loads in a .json file as a mesh with a material applied
 
-function loadMesh() {
-  console.log(jsonObject);
+function loadMesh(file) {
   var loader = new THREE.JSONLoader();
-  loader.load(jsonObject, function(geometry, material) {
+  loader.load(file, function(geometry, material) {
       mesh = new THREE.Mesh(geometry, new THREE.MeshFaceMaterial(material));
       scene.add(mesh);
       console.log("Mesh loaded!")
