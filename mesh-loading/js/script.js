@@ -8,6 +8,8 @@ var renderer;
 var mesh;
 var clock = new THREE.Clock();
 
+var jsonObject = "./objects/suzanne.json"
+
 // Initialize functions
 
 init();
@@ -67,8 +69,9 @@ function init() {
 // Loads in a .json file as a mesh with a material applied
 
 function loadMesh() {
+  console.log(jsonObject);
   var loader = new THREE.JSONLoader();
-  loader.load("./objects/suzanne.json", function(geometry, material) {
+  loader.load(jsonObject, function(geometry, material) {
       mesh = new THREE.Mesh(geometry, new THREE.MeshFaceMaterial(material));
       scene.add(mesh);
       console.log("Mesh loaded!")
