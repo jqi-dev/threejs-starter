@@ -8,6 +8,8 @@ var renderer;
 var mesh;
 var clock = new THREE.Clock();
 
+// Path to the .json file that will be loaded in as a mesh
+
 var jsonObject = "./objects/suzanne.json"
 
 // Initialize functions
